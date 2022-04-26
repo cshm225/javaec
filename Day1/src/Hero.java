@@ -18,4 +18,8 @@ public class Hero {
 	public String getName() {
 		return this.name;
 	}
+	@Override
+	public String toString() {
+		return "名前:"+this.name+"/HP:"+this.hp;
+	}
 }
