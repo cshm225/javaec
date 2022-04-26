@@ -7,6 +7,7 @@ public class HeroApp {
 		Wand wand=new Wand(10,"tue");
 		Wizard w=new Wizard(50,20,"B",wand);
 		w.heal(h);
+	System.out.print("");
 	}
 
 }
