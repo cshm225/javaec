@@ -23,18 +23,27 @@ public class Wizard {
 		return this.hp;
 	}
 	public void setMp(int mp) {
+		if(mp<0) {
+			throw new IllegalArgumentException("huseimp");
+		}
 		this.mp=mp;
 	}
 	public int getMp() {
 		return this.mp;
 	}
 	public void setName(String name) {
+		if(name.length()<3||name==null) {
+			throw new IllegalArgumentException("名前が不正3文字以上");
+		}
 		this.name=name;
 	}
 	public String getName() {
 		return this.name;
 	}
 	public void setWand(Wand wand) {
+		if(wand==null) {
+			throw new IllegalArgumentException("名前が不正3文字以上");
+		}
 		this.wand=wand;
 	}
 	public Wand getWand() {

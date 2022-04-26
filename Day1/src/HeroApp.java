@@ -5,7 +5,7 @@ public class HeroApp {
 		// TODO 自動生成されたメソッド・スタブ
 		Hero h=new Hero(100,"A");
 		Wand wand=new Wand(10,"tue");
-		Wizard w=new Wizard(50,20,"B",wand);
+		Wizard w=new Wizard(50,20,"Baa",wand);
 		w.heal(h);
 	}
 
