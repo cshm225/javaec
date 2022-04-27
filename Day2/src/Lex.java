@@ -43,6 +43,7 @@ public class Lex {
 	public static void Method(int... args) {
 		for(int i:args) {
 			System.out.println(i);
+			System.out.println(i);
 		}
 	}
 }
