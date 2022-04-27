@@ -9,6 +9,7 @@ public class Sample {
 		map.put("Kanagawa", 500);
 		map.put("Hirosima", 200);
 		System.out.println(map);
+		System.out.println(map);
 	}
 
 }
