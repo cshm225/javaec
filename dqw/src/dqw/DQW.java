@@ -53,24 +53,24 @@ public class DQW {
 				System.out.println("現在の状況からSが指定枚数できるまでの回数をシミュレーションします");
 				System.out.print("Sの必要枚数を入力>>");
 				int sCount=SC.nextInt();
-				 System.out.print("シミュレーション回数を入力>>");
-			       int tryCount=SC.nextInt();
+				System.out.print("シミュレーション回数を入力>>");
+				int tryCount=SC.nextInt();
 				simulator(cards,sCount,tryCount);
 				break;
-				default:
-					System.out.println("end");
-					return;
-				
+			default:
+				System.out.println("end");
+				return;
+
 			}
 		}
 	}
-	 static void showMenu(){
-		    final String[] MENU={"カードを引く","カードを合成する","カードをセットする","シミュレーションする","終了"};
-		    for(int i=0;i<MENU.length;i++){
-		      System.out.printf("%d:%s%n",i,MENU[i]);
-		    }
-		    System.out.print(">>");
-		  }
+	static void showMenu(){
+		final String[] MENU={"カードを引く","カードを合成する","カードをセットする","シミュレーションする","終了"};
+		for(int i=0;i<MENU.length;i++){
+			System.out.printf("%d:%s%n",i,MENU[i]);
+		}
+		System.out.print(">>");
+	}
 	static  void showCards(Map<Card,Integer> cards) {
 		for(Card c :cards.keySet()) {
 			System.out.printf("%s(%d)", c.rank,cards.get(c));
@@ -105,7 +105,7 @@ public class DQW {
 			cards.put(c, cardcounts[idx++]);
 		}
 	}
-	
+
 	static void simulator(Map<Card,Integer> cards,int sCount,int tryCount){
 		int nowPoint=0;
 		for(Card c:cards.keySet()) {
